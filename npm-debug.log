@@ -1,0 +1,122 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/bernardog/.nvm/v0.10.33/bin/node',
+1 verbose cli   '/Users/bernardog/.nvm/v0.10.33/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/bernardog/Projects/humblelotto-angular',
+5 verbose install   [ 'autoprefixer-core',
+5 verbose install     'browser-sync',
+5 verbose install     'del',
+5 verbose install     'gulp',
+5 verbose install     'gulp-cache',
+5 verbose install     'gulp-csso',
+5 verbose install     'gulp-if',
+5 verbose install     'gulp-imagemin',
+5 verbose install     'gulp-jshint',
+5 verbose install     'gulp-load-plugins',
+5 verbose install     'gulp-minify-html',
+5 verbose install     'gulp-postcss',
+5 verbose install     'gulp-sass',
+5 verbose install     'gulp-size',
+5 verbose install     'gulp-sourcemaps',
+5 verbose install     'gulp-uglify',
+5 verbose install     'gulp-useref',
+5 verbose install     'jshint-stylish',
+5 verbose install     'main-bower-files',
+5 verbose install     'opn',
+5 verbose install     'wiredep' ] ]
+6 info preinstall @
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping gulp-csso@^0.2.6 /Users/bernardog/Projects/humblelotto-angular
+9 verbose already installed skipping gulp-if@^1.2.1 /Users/bernardog/Projects/humblelotto-angular
+10 verbose already installed skipping gulp-imagemin@^2.0.0 /Users/bernardog/Projects/humblelotto-angular
+11 verbose already installed skipping gulp-jshint@^1.5.3 /Users/bernardog/Projects/humblelotto-angular
+12 verbose already installed skipping gulp-load-plugins@^0.8.0 /Users/bernardog/Projects/humblelotto-angular
+13 verbose already installed skipping gulp-minify-html@^0.1.6 /Users/bernardog/Projects/humblelotto-angular
+14 verbose already installed skipping gulp-postcss@^3.0.0 /Users/bernardog/Projects/humblelotto-angular
+15 verbose cache add [ 'gulp-sass@2.0.1', null ]
+16 verbose cache add name=undefined spec="gulp-sass@2.0.1" args=["gulp-sass@2.0.1",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'gulp-sass@2.0.1',
+17 verbose parsed url   path: 'gulp-sass@2.0.1',
+17 verbose parsed url   href: 'gulp-sass@2.0.1' }
+18 verbose already installed skipping gulp-size@^1.1.0 /Users/bernardog/Projects/humblelotto-angular
+19 verbose cache add name="gulp-sass" spec="2.0.1" args=["gulp-sass","2.0.1"]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '2.0.1',
+20 verbose parsed url   path: '2.0.1',
+20 verbose parsed url   href: '2.0.1' }
+21 verbose addNamed [ 'gulp-sass', '2.0.1' ]
+22 verbose addNamed [ '2.0.1', '2.0.1' ]
+23 verbose already installed skipping gulp-sourcemaps@^1.3.0 /Users/bernardog/Projects/humblelotto-angular
+24 verbose already installed skipping gulp-uglify@^1.0.1 /Users/bernardog/Projects/humblelotto-angular
+25 silly lockFile c69543d8-gulp-sass-2-0-1 gulp-sass@2.0.1
+26 verbose lock gulp-sass@2.0.1 /Users/bernardog/.npm/c69543d8-gulp-sass-2-0-1.lock
+27 verbose already installed skipping gulp-useref@^1.0.2 /Users/bernardog/Projects/humblelotto-angular
+28 verbose already installed skipping jshint-stylish@^1.0.0 /Users/bernardog/Projects/humblelotto-angular
+29 verbose already installed skipping main-bower-files@^2.5.0 /Users/bernardog/Projects/humblelotto-angular
+30 verbose request where is /gulp-sass
+31 verbose request registry http://registry.npmjs.org/
+32 verbose request id 0eab85220c475a09
+33 verbose url raw /gulp-sass
+34 verbose url resolving [ 'http://registry.npmjs.org/', './gulp-sass' ]
+35 verbose url resolved http://registry.npmjs.org/gulp-sass
+36 verbose request where is http://registry.npmjs.org/gulp-sass
+37 info trying registry request attempt 1 at 17:39:27
+38 verbose etag "CW8KD605KJPC6AL8BAMOFNYCL"
+39 http GET http://registry.npmjs.org/gulp-sass
+40 verbose already installed skipping opn@^1.0.0 /Users/bernardog/Projects/humblelotto-angular
+41 verbose already installed skipping wiredep@^2.0.0 /Users/bernardog/Projects/humblelotto-angular
+42 verbose already installed skipping autoprefixer-core@^4.0.2 /Users/bernardog/Projects/humblelotto-angular
+43 verbose already installed skipping browser-sync@^1.8.2 /Users/bernardog/Projects/humblelotto-angular
+44 verbose already installed skipping del@^1.1.1 /Users/bernardog/Projects/humblelotto-angular
+45 verbose already installed skipping gulp@^3.6.0 /Users/bernardog/Projects/humblelotto-angular
+46 verbose already installed skipping gulp-cache@^0.2.2 /Users/bernardog/Projects/humblelotto-angular
+47 http 304 http://registry.npmjs.org/gulp-sass
+48 silly registry.get cb [ 304,
+48 silly registry.get   { date: 'Sat, 14 Mar 2015 16:39:27 GMT',
+48 silly registry.get     via: '1.1 varnish',
+48 silly registry.get     'last-modified': 'Sat, 14 Mar 2015 16:39:28 GMT',
+48 silly registry.get     'cache-control': 'max-age=60',
+48 silly registry.get     etag: '"CW8KD605KJPC6AL8BAMOFNYCL"',
+48 silly registry.get     age: '0',
+48 silly registry.get     connection: 'keep-alive',
+48 silly registry.get     'x-served-by': 'cache-fra1238-FRA',
+48 silly registry.get     'x-cache': 'HIT',
+48 silly registry.get     'x-cache-hits': '1',
+48 silly registry.get     'x-timer': 'S1426351167.434965,VS0,VE713',
+48 silly registry.get     vary: 'Accept' } ]
+49 verbose etag http://registry.npmjs.org/gulp-sass from cache
+50 silly lockFile c69543d8-gulp-sass-2-0-1 gulp-sass@2.0.1
+51 silly lockFile c69543d8-gulp-sass-2-0-1 gulp-sass@2.0.1
+52 error Error: version not found: gulp-sass@2.0.1
+52 error     at /Users/bernardog/.nvm/v0.10.33/lib/node_modules/npm/lib/cache/add-named.js:125:12
+52 error     at saved (/Users/bernardog/.nvm/v0.10.33/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+52 error     at Object.oncomplete (fs.js:107:15)
+53 error If you need help, you may report this *entire* log,
+53 error including the npm and node versions, at:
+53 error     <http://github.com/npm/npm/issues>
+54 error System Darwin 14.1.0
+55 error command "/Users/bernardog/.nvm/v0.10.33/bin/node" "/Users/bernardog/.nvm/v0.10.33/bin/npm" "install"
+56 error cwd /Users/bernardog/Projects/humblelotto-angular
+57 error node -v v0.10.33
+58 error npm -v 1.4.28
+59 verbose exit [ 1, true ]
