@@ -10,7 +10,7 @@ app.config(["$routeProvider", function ($routeProvider) {
 }]);
 
 app.controller('HomeController', ['$scope', function ($scope) {
-  $scope.charityOrganizations = [
+  $scope.organizations = [
     {
       name: "Children's Cancer Foundation",
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus leo, sodales placerat lobortis ut, tincidunt volutpat nisl. Sed nisl metus, blandit sed auctor eu, faucibus at neque.'
