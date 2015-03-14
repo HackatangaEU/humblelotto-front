@@ -1,93 +1,101 @@
-$icon-font-path: '../fonts/';
+@import "bourbon/bourbon";
+@import "neat/neat";
 
-// bower:scss
-@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower
+$grey-font: #b0b0b0;
+$primary-color: #779fe1;
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-family: 'Open Sans';
+  font-style: 16px;
+  line-height: 1.5em;
+  background: #f0f0f0;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+a {
+  text-decoration: none;
+  color: $primary-color;
+  @include transition(all, 0.3s, ease);
+  &:hover {
+    color: shade($primary-color, 10%);
+  }
 }
 
-/* Custom page header */
+.content {
+  max-width: $max-width;
+  margin: auto;
+  padding: 0 $gutter;
+}
+
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  height: 4em;
+  background: #ffffff;
+  line-height: 4em;
+}
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+.header-logo {
+  float: left;
+}
+
+.header-nav {
+  float: right;
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline;
+    margin-right: 1em;
+    a {
+      text-decoration: none;
+      color: $grey-font;
+      transition: all 0.5s ease;
+      &:hover {
+        color: #000;
+      }
+    }
   }
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+h1 {
+  font-style: 2em;
+  line-height: 1.5em;
+  font-weight: 300;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+
+.actual-lotto {
+  @include row();
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
+.actual-lotto--text {
+  @include span-columns(8);
+}
+
+.actual-lotoo--calling {
+  margin-top: 5em;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+  @include span-columns(4);
+}
+
+.centered {
+  text-align: center;
+}
+
+.btn {
+  background: $primary-color;
+  padding: 0.5em;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  @include transition(all, 0.5s, ease);
+  &:hover {
+    background: shade($primary-color, 10%);
   }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
+.btn-big {
+  font-size: 1.5em;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+.btn-block {
+  display: block;
+  width: 100%;
 }
