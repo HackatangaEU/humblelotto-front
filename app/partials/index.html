@@ -1,27 +1,28 @@
-<section class="actual-lotto">
-  <div class="actual-lotto--text">
-    <h1>The Humble Lotto is now in the fight against the childhood cancer.</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus leo, sodales placerat lobortis ut, tincidunt volutpat nisl.</p>
-    <a href="#">Read More</a>
-  </div>
-  <div class="actual-lotoo--calling">
-    <a href="#/buy_ticket" class="btn btn-big btn-block">GET YOUR RAFFLE</a>
-    <small>Get a chance to earn money and help charity!<br/> Tickets available from £2.50</small>
-  </div>
-</section>
-
-<section class="organizations">
-
-  <h1 class="centered">Organizations</h1>
-  <p class="centered">Know more about charity organizations.</p>
-
-  <div ng-repeat="organization in organizations" class="organizations--item">
-    <div class="organization-logo"></div>
-    <div class="organization-description">
-      <h2>{{organization.name}}</h2>
-      <p>{{organization.description}}</p>
-      <a href="#">Read more</a>
+<div class="content">
+  <section class="actual-lotto">
+    <div class="actual-lotto--text">
+      <h1>The Humble Lotto is now in the fight against the childhood cancer.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus leo, sodales placerat lobortis ut, tincidunt volutpat nisl.</p>
+      <a href="#">Read More</a>
     </div>
-  </div>
+    <div class="actual-lotoo--calling">
+      <a href="#/buy_ticket" class="btn btn-big btn-block">GET YOUR RAFFLE</a>
+      <small>Get a chance to earn money and help charity!<br/> Tickets available from £2.50</small>
+    </div>
+  </section>
 
-</section>
+  <section class="organizations">
+    <div class="organizations-header">
+      <h1 class="centered">Organizations</h1>
+      <p class="centered">Know more about charity organizations.</p>
+    </div>
+    <div ng-repeat="organization in organizations" class="organizations--item">
+      <div class="organization-logo"></div>
+      <div class="organization-description">
+        <h2>{{organization.name}}</h2>
+        <p>{{organization.description}}</p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+  </section>
+</div>

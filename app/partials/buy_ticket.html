@@ -1,24 +1,48 @@
 <section class="tickets-selling">
-  <div class="tickets-selling--description">
-    <h1>Get your raffles!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel provident ut dicta beatae rem, sed inventore at minus eligendi, sint aperiam iusto assumenda adipisci. Voluptate ab, enim tempora! Odit, modi.</p>
-  </div>
-  <div class="tickets-selling--buy-form">
-    <div class="tickets-box">
-      <label for="quantity">Nº TICKETS</label>
-      <br/>
-      <input ng-change="refreshTotal()" ng-model="quantity" name="quantity" type="text" class="tickets-qty" placeholder="00" value="00">
+  <div class="content">
+    <div class="tickets-selling--description">
+      <h1>Get your raffles!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel provident ut dicta beatae rem, sed inventore at minus eligendi, sint aperiam iusto assumenda adipisci. Voluptate ab, enim tempora! Odit, modi.</p>
+      <p>Placeat illum soluta tempore explicabo aperiam quisquam nostrum ad voluptas odit optio sit nulla culpa ipsam, perferendis ratione atque enim, ducimus rerum.</p>
     </div>
-    <span class="times">X</span>
-    <div class="tickets-box">
-      <span>VALUE</span>
-      <br/>
-      <span class="value">{{value}}</span>
-    </div>
-    <span class="equals">=</span>
-    <div class="tickets-box">
-      <span>TOTAL</span>
-      <span class="total"> {{total}} </span>
+    <div class="tickets-selling--buy-form">
+      <div class="tickets-square">
+        <div class="clearfix">
+          <div class="tickets-box">
+            <label for="quantity">Nº TICKETS</label>
+            <br/>
+            <input ng-change="refreshTotal()" autocomplete="off" ng-model="quantity" name="quantity" type="text" class="tickets-qty" placeholder="00" value="00">
+          </div>
+          <span class="times">X</span>
+          <div class="tickets-box">
+            <span>VALUE</span>
+            <br/>
+          <span class="value">{{value}}<small>mbtc</small></span>
+          </div>
+          <span class="equals">=</span>
+          <div class="tickets-box">
+            <span>TOTAL</span>
+            <span class="total">{{total}}<small>mbtc</small></span>
+          </div>
+        </div>
+        <label for="address">Wallet Address</label>
+        <br/>
+        <input type="text" class="wallet-address">
+        <br/>
+        <br/>
+        Choose one of the organizations below to donate:
+        <br>
+        <br>
+        <ul class="organizations_choice">
+          <li ng-repeat="organization in organizations">
+            <input type="radio" name="organization">
+            <strong>{{organization.name}}</strong>
+            <small>{{organization.description}}</small>
+          </li>
+        </ul>
+        <br>
+        <a href="#" class="btn">BUY RAFFLE(S)</a>
+      </div>
     </div>
   </div>
 </section>

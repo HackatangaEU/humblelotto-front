@@ -33,4 +33,14 @@ app.controller('TicketsController', ['$scope', function ($scope) {
   $scope.refreshTotal= function () {
     $scope.total = $scope.value * $scope.quantity;
   }
+  $scope.organizations = [
+    {
+      name: "Children's Cancer Foundation",
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus leo, sodales placerat lobortis ut, tincidunt volutpat nisl. Sed nisl metus, blandit sed auctor eu, faucibus at neque.'
+    },
+    {
+      name: "Arms Wide Open Foundation",
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus leo, sodales placerat lobortis ut, tincidunt volutpat nisl. Sed nisl metus, blandit sed auctor eu, faucibus at neque.'
+    }
+  ]
 }]);
