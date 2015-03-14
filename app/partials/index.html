@@ -1,54 +1,27 @@
-<header class="header">
-  <div class="content">
-    <div class="header-logo">
-      The Humble Lotto
-    </div>
-    <ul class="header-nav">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Support</a></li>
-      <li><a href="#">FAQ</a></li>
-    </ul>
+<section class="actual-lotto">
+  <div class="actual-lotto--text">
+    <h1>The Humble Lotto is now in the fight against the childhood cancer.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus leo, sodales placerat lobortis ut, tincidunt volutpat nisl.</p>
+    <a href="#">Read More</a>
   </div>
-</header>
-<div class="content">
-  <section class="actual-lotto">
-    <div class="actual-lotto--text">
-      <h1>The Humble Lotto is now in the fight against the childhood cancer.</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus leo, sodales placerat lobortis ut, tincidunt volutpat nisl.</p>
-      <a href="#">Read More</a>
-    </div>
-    <div class="actual-lotoo--calling">
-      <a href="#" class="btn btn-big btn-block">GET A TICKET</a>
-      <small>Get a chance to earn money and help charity!<br/> Tickets available from £2.50</small>
-    </div>
-  </section>
-
-  <section class="organizations">
-
-    <h1 class="centered">Organizations</h1>
-    <p class="centered">Know more about charity organizations.</p>
-
-    <div ng-repeat="organization in organizations" class="organizations--item">
-      <div class="organization-logo"></div>
-      <div class="organization-description">
-        <h2>{{organization.name}}</h2>
-        <p>{{organization.description}}</p>
-        <a href="#">Read more</a>
-      </div>
-    </div>
-
-  </section>
-</div>
-
-<footer class="footer">
-  <div class="content">
-    <span class="copyright">Copyright © 2015 Hackathanga</span>
-    <ul class="sitemap">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Past editions</a></li>
-      <li><a href="">FAQ</a></li>
-      <li><a href="">Support us</a></li>
-    </ul>
+  <div class="actual-lotoo--calling">
+    <a href="#/buy_ticket" class="btn btn-big btn-block">GET YOUR RAFFLE</a>
+    <small>Get a chance to earn money and help charity!<br/> Tickets available from £2.50</small>
   </div>
-</footer>
+</section>
+
+<section class="organizations">
+
+  <h1 class="centered">Organizations</h1>
+  <p class="centered">Know more about charity organizations.</p>
+
+  <div ng-repeat="organization in organizations" class="organizations--item">
+    <div class="organization-logo"></div>
+    <div class="organization-description">
+      <h2>{{organization.name}}</h2>
+      <p>{{organization.description}}</p>
+      <a href="#">Read more</a>
+    </div>
+  </div>
+
+</section>
