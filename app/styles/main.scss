@@ -118,9 +118,13 @@ h2 {
   width: 100%;
 }
 
+.organization {
+  margin: 4em 0;
+}
+
 .organizations--item {
   @include row();
-  margin-bottom: 1em;
+  margin-bottom: 4em;
 }
 
 .organization-logo {
@@ -135,7 +139,7 @@ h2 {
 }
 
 .organizations-header {
-  margin: 0 2rem;
+  margin: 4rem 0;
 }
 
 .footer {
