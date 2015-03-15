@@ -4,6 +4,8 @@
 $grey-font: #b0b0b0;
 $primary-color: #FFCA23;
 
+$tablet-up: 769px;
+
 *:focus {
     outline: 0;
 }
@@ -38,18 +40,35 @@ a {
 }
 
 .header-logo {
-  float: left;
+  @include media($tablet-up) {
+    float: left;
+  }
   a {
     color: #000;
   }
 }
 
-.header-nav {
+.menu-ico {
   float: right;
+  @include media($tablet-up) {
+    display: none;
+  }
+}
+
+.header-nav {
+  display: none;
+  float: left;
+  @include media($tablet-up) {
+    float: right;
+    display: block;
+  }
   margin: 0;
   padding: 0;
   li {
-    display: inline;
+    list-style-type: none;
+    @include media($tablet-up) {
+      display: inline;
+    }
     margin-right: 1em;
     a {
       text-decoration: none;
@@ -83,13 +102,19 @@ h2 {
 }
 
 .actual-lotto--text {
-  @include span-columns(8);
+  @include span-columns(12);
+  @include media($tablet-up) {
+    @include span-columns(8);
+  }
 }
 
 .actual-lotoo--calling {
   margin-top: 5em;
   text-align: center;
-  @include span-columns(4);
+  @include span-columns(12);
+  @include media($tablet-up) {
+    @include span-columns(4);
+  }
 }
 
 .centered {
@@ -102,7 +127,11 @@ h2 {
   border-radius: 4px;
   text-decoration: none;
   color: #fff;
+  width: 100%;
   @include transition(all, 0.5s, ease);
+  @include media($tablet-up) {
+    width: auto;
+  }
   &:hover {
     color: #fff;
     background: shade($primary-color, 10%);
@@ -128,14 +157,20 @@ h2 {
 }
 
 .organization-logo {
-  @include span-columns(5);
+  @include span-columns(12);
+  @include media($tablet-up) {
+    @include span-columns(5);
+  }
   height: 10em;
   border-radius: 4px;
   background: #c1c1c1;
 }
 
 .organization-description {
-  @include span-columns(7);
+  @include span-columns(12);
+  @include media($tablet-up) {
+    @include span-columns(7);
+  }
 }
 
 .organizations-header {
@@ -155,8 +190,10 @@ h2 {
   @include outer-container();
   li {
     list-style-type: none;
-    @include span-columns(2);
-    @include omega(2n);
+    @include media($tablet-up) {
+      @include span-columns(2);
+      @include omega(2n);
+    }
     font-size: 0.8em;
     a {
       color: $grey-font;
