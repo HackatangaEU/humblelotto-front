@@ -316,3 +316,11 @@ h2 {
   padding: 0;
   list-style-type: none;
 }
+
+.payment-confirmation {
+  margin: 4em 0;
+  text-align: center;
+  padding: 1em;
+  background: $primary-color;
+  border-radius: 4px;
+}

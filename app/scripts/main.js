@@ -12,6 +12,10 @@ app.filter('moment', function () {
 
 app.config(["$routeProvider", function ($routeProvider) {
   $routeProvider
+    .when('/payment_confirmation', {
+      templateUrl: './partials/payment_confirmation.html',
+      controller: 'ConfirmationController'
+    })
     .when('/buy_ticket', {
       templateUrl: './partials/buy_ticket.html',
       controller: 'TicketsController'
@@ -81,6 +85,7 @@ app.controller('TicketsController', ['$scope', 'OrganizationsFac', '$http', func
     +raffle.address+"&ntickets="
     +raffle.ntickets+"&organization="
     +raffle.organization;
+    // To all the leds from programming... sorry.
     window.location = url;
     // $http.get(url).success(function (data, status) {
     //   console.log(data);
@@ -101,6 +106,13 @@ app.controller('OrganizationsController', ['$scope', '$routeParams', 'Organizati
      $scope.organization = data;
      console.log(data);
    });
+}]);
+
+app.controller('ConfirmationController', ['$scope', '$http', 'Lotto', function ($scope, $http, Lotto) {
+  Lotto.success(function (data) {
+    $scope.lotto = data;
+  });
+  
 }]);
 
 app.factory("Lotto", function ($http) {
