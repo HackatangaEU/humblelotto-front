@@ -1,13 +1,14 @@
 <section class="actual-lotto">
   <div class="actual-lotto--text">
-    <h1>Current lottery is {{lotto.name}}. It will end {{lotto.date_end | moment: 'fromNow'}}.</h1>
+    <h1>Current lottery is <strong>{{lotto.name}}</strong>.
+      <br>It will end {{lotto.date_end | moment: 'fromNow'}}.</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus leo, sodales placerat lobortis ut, tincidunt volutpat nisl.</p>
     <a href="#">Read More</a>
   </div>
   <div class="actual-lotoo--calling">
-    <h1>{{lotto.sum + "mbtc"}}</h1>
+    <h1>Jackpot: {{lotto.sum + "mbtc"}}</h1>
     <a href="#/buy_ticket" class="btn btn-big btn-block">GET YOUR RAFFLE</a>
-    <small>Get a chance to earn money and help charity!<br/> Tickets available from £2.50</small>
+    <small>Get a chance to earn money and help charity!<br/> Tickets available from 2.50mbtc</small>
   </div>
 </section>
 
@@ -17,7 +18,9 @@
     <p class="centered">Know more about charity organizations.</p>
   </div>
   <div ng-repeat="organization in organizations" class="organizations--item">
-    <div class="organization-logo"></div>
+    <div class="organization-logo">
+      <img src="{{organization.logo_path}}" alt="">
+    </div>
     <div class="organization-description">
       <h2>{{organization.name}}</h2>
       <p>{{organization.description}}</p>

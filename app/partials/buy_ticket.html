@@ -10,9 +10,9 @@
         <div class="tickets-box">
           <label for="quantity">Nº TICKETS</label>
           <br/>
-          <input ng-change="refreshTotal()" autocomplete="off" ng-model="quantity" name="quantity" type="text" class="tickets-qty" placeholder="00" value="00">
+          <input ng-change="refreshTotal()" autocomplete="off" ng-model="quantity" name="quantity" type="text" class="tickets-qty" placeholder="00">
         </div>
-        <span class="times">X</span>
+        <span class="times"><i class="fa fa-times"></i></span>
         <div class="tickets-box">
           <span>VALUE</span>
           <br/>
@@ -24,9 +24,11 @@
           <span class="total">{{total}}<small>mbtc</small></span>
         </div>
       </div>
+      <br>
+      <br>
       <label for="address">Wallet Address</label>
       <br/>
-      <input type="text" class="wallet-address">
+      <input type="text" class="wallet-address" ng-model="walletAddress">
       <br/>
       <br/>
       Choose one of the organizations below to donate:
@@ -34,13 +36,13 @@
       <br>
       <ul class="organizations_choice">
         <li ng-repeat="organization in organizations">
-          <input type="radio" name="organization">
+          <input type="radio" ng-change="change(organization.id)" ng-model="organizationId"  ng-value="{{organization.id}}" name="organization">
           <strong>{{organization.name}}</strong>
           <small>{{organization.description}}</small>
         </li>
       </ul>
       <br>
-      <a href="#" class="btn"><i class="fa fa-chevron-circle-right"></i> BUY RAFFLE(S)</a>
+      <input type="submit" ng-click="submitRaffles()" class="btn" value="BUY RAFFLES"/>
     </div>
   </div>
 </section>

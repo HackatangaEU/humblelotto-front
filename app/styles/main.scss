@@ -109,7 +109,7 @@ h2 {
 }
 
 .actual-lotoo--calling {
-  margin-top: 2em;
+  margin-top: 1em;
   text-align: center;
   @include span-columns(12);
   @include media($tablet-up) {
@@ -126,6 +126,7 @@ h2 {
   padding: 0.5em;
   border-radius: 4px;
   text-decoration: none;
+  border: 0;
   color: #fff;
   width: 100%;
   @include transition(all, 0.5s, ease);
@@ -161,9 +162,12 @@ h2 {
   @include media($tablet-up) {
     @include span-columns(5);
   }
-  height: 10em;
   border-radius: 4px;
-  background: #c1c1c1;
+  /* background: #c1c1c1; */
+  text-align: center;
+  img {
+    width: 100%;
+  }
 }
 
 .organization-description {
@@ -266,20 +270,21 @@ h2 {
     color: #d8d8d8;
   }
   background: transparent;
-  border: 0;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
 }
 
 .tickets-selling--description {
   @include span-columns(12);
   @include media($tablet-up) {
-    @include span-columns(5);
+    @include span-columns(4);
   }
 }
 
 .tickets-selling--buy-form {
   @include span-columns(12);
   @include media($tablet-up) {
-    @include span-columns(7);
+    @include span-columns(8);
     margin-top: 2rem;
   }
 }
