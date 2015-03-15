@@ -109,7 +109,7 @@ h2 {
 }
 
 .actual-lotoo--calling {
-  margin-top: 5em;
+  margin-top: 2em;
   text-align: center;
   @include span-columns(12);
   @include media($tablet-up) {
@@ -235,13 +235,17 @@ h2 {
 
 .times, .equals {
   float: left;
-  font-size: 50px;
+  @include media($tablet-up) {
+    font-size: 50px;
+  }
   margin: 0 1rem;
   margin-top: 4rem;
 }
 
 .value, .total {
-  font-size: 70px;
+  @include media($tablet-up) {
+    font-size: 70px;
+  }
   display: block;
   margin-top: 2.5rem;
   small {
@@ -250,8 +254,11 @@ h2 {
 }
 
 .tickets-qty {
-  height: 85px;
-  width: 85px;
+  @include media($tablet-up) {
+    height: 85px;
+    width: 85px;
+    font-size: 70px;
+  }
   &:hover {
     cursor: pointer;
   }
@@ -260,16 +267,21 @@ h2 {
   }
   background: transparent;
   border: 0;
-  font-size: 70px;
 }
 
 .tickets-selling--description {
-  @include span-columns(5);
+  @include span-columns(12);
+  @include media($tablet-up) {
+    @include span-columns(5);
+  }
 }
 
 .tickets-selling--buy-form {
-  @include span-columns(7);
-  margin-top: 2rem;
+  @include span-columns(12);
+  @include media($tablet-up) {
+    @include span-columns(7);
+    margin-top: 2rem;
+  }
 }
 
 .wallet-address {

@@ -1,10 +1,11 @@
 <section class="actual-lotto">
   <div class="actual-lotto--text">
-    <h1>The Humble Lotto is now in the fight against the childhood cancer.</h1>
+    <h1>Current lottery is {{lotto.name}}. It will end {{lotto.date_end | moment: 'fromNow'}}.</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent metus leo, sodales placerat lobortis ut, tincidunt volutpat nisl.</p>
     <a href="#">Read More</a>
   </div>
   <div class="actual-lotoo--calling">
+    <h1>{{lotto.sum + "mbtc"}}</h1>
     <a href="#/buy_ticket" class="btn btn-big btn-block">GET YOUR RAFFLE</a>
     <small>Get a chance to earn money and help charity!<br/> Tickets available from £2.50</small>
   </div>
